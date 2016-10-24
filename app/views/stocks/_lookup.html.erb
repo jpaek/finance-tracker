@@ -16,6 +16,9 @@
     </div>
   </div>
   <% end %>
+  <div id="spinner" class="row col-md-12 text-center spinner" style="display:none;">
+    <i class="fa fa-spinner fa-spin fa-2x"></i> Processing...
+  </div>
   <% if @stock %>
   <div id="stock-lookup-results" class="well results-block">
     <strong>Symbol:</strong> <%= @stock.ticker %>
@@ -23,4 +26,5 @@
     <strong>Price:</strong> <%= @stock.price %>
   </div>
   <% end %>
+  <div id="stock-lookup-errors"></div>
 </div>
